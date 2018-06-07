@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="common">
+    <h1>This is my Word Guess Game!</h1>
+    <p>Guess the word I guess.</p>
+    <div id="blanks"></div>
+    <div id="attempts"></div>
+
+</div>
+
+<div>
+
+
+<div id="win"></div>
+<div id="lose"></div>
+<button id="reset">RESET</button>
+
+</div>
+    
+
+
+
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+
+<!-- <script>
+    var wordchoices = ["dingus", "dangus", "rangus"];
+    var wordrandom = wordchoices[Math.floor(Math.random() * 3)];
+    var wordletters = wordrandom.split('');
+    var myLength = wordrandom.length;
+    var linedisplay = [myLength];
+    var attempts = 10;
+    var input;
+    var inputarray = [];
+    var string = "";
+    var fullstring;
+    var lose;
+    var win;
+
+    var reset = function(){
+        wordrandom = wordchoices[Math.floor(Math.random() * 3)];
+        wordletters = wordrandom.split('');
+        myLength = wordrandom.length;
+        linedisplay = [myLength];
+        attempts = 10;
+        input;
+        win= "";
+        inputarray = [];
+        string = "";
+
+            for(var i = 0; i < wordrandom.length; i++){
+        linedisplay[i] = "_ ";
+        string = string + linedisplay[i];
+    }
+    console.log(string);
+    document.getElementById("blanks").innerHTML = string;
+    document.getElementById("attempts").innerHTML = attempts;
+
+    }
+
+    console.log(myLength);
+// makes the _ that make up the guess blank for each random word
+    for(var i = 0; i < wordrandom.length; i++){
+        linedisplay[i] = "_ ";
+        string = string + linedisplay[i];
+    }
+    console.log(string);
+    document.getElementById("blanks").innerHTML = string;
+
+//stores the users input and checks against characters in the random word
+
+console.log(wordletters);
+
+
+document.getElementById("reset").addEventListener('click', function(e){
+    e.preventDefault();
+    document.getElementById("common").style.display = "block";
+    document.getElementById('win').innerHTML = ""
+    document.getElementById('lose').innerHTML = ""
+    reset();
+
+})
+
+document.onkeyup = function(event) {
+                input = event.key;
+
+
+                const present = wordletters.indexOf(input) !== -1;
+
+                if(present){
+                    inputarray.push(input);
+                    string+= input
+                    linedisplay[wordletters.indexOf(input) ] = input
+
+                }else {
+                 attempts--;   
+                }
+                if(linedisplay.join("") === wordletters.join("")){
+                   
+                    document.getElementById("common").style.display = "none";
+                    document.getElementById('win').innerHTML = "You win"
+                    return null;
+
+                }
+                if (attempts === 0){
+                    document.getElementById("common").style.display = "none";
+                    document.getElementById('lose').innerHTML = "You lose"
+                    return null;
+                    
+                }
+                    console.log(string);
+                         document.getElementById("blanks").innerHTML = linedisplay.join("");
+                         document.getElementById("attempts").innerHTML = attempts;
+                         
+                         
+                    
+                }
+                
+
+                
+                
+
+
+                
+            
+    
+
+    
+</script> -->
+</body>
+</html>

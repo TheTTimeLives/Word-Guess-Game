@@ -1,0 +1,58 @@
+#common{
+    margin: 0 100px;
+}
+
+body {
+    height: 100%;
+   
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: aliceblue;
+    background-image: url("../images/black_scales.png")
+}
+h1 {
+    font-size: 84px;
+    text-align: center;
+    color: aliceblue;
+}
+p{
+    font-size: 48px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#blanks{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+#attempts{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+#win{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+#lose{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+#reset{
+    position: relative;
+    left: 570px;
+    top: 15px;
+    align-content: center;
+    font-size: 60px;
+    
+}
